@@ -1,5 +1,6 @@
 import UserProfileCard from './UserProfileCard'
 import './App.css'
+import UserProfileCard2 from './UserProfileCard2'
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
 
   return (
     <div>
-      <UserProfileCard />
+      <UserProfileCard2 />
     </div>
 
 
