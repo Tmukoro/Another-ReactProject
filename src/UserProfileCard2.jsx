@@ -1,4 +1,4 @@
-import { Box, Text, List, Button, Heading, Stack, Icon, Circle} from "@chakra-ui/react";
+import { Box, Text, List, Button, Heading, Stack, Icon, Circle, Flex} from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 import pimg from './assets/pimg2.jpg';
 import { MdBrightness4 } from "react-icons/md";
@@ -11,7 +11,7 @@ const UserProfileCard2 = ()=>{
 
     return(
         
-        <Box bg={colorMode === 'dark' ? 'white' : 'black'} transition={"all 0.3s"}  w={{base: '90%', sm: '450px'}} h={{base: '430px', md: '400px'}} m={'auto'} mt={10} borderRadius={15} overflow={'hidden'} boxShadow={'md'}>
+        <Box bg={colorMode === 'dark' ? 'white' : 'black'} transition={"all 0.3s"}  w={{base: '90%', sm: '450px'}} h={{base: '470px', md: '450px'}} m={'auto'} mt={10} borderRadius={15} overflow={'hidden'} boxShadow={'md'}>
       
        <Stack>
         <Box h={{base: 'auto', md: '140px'}} pt={2} display={'flex'} justifyContent={'space-between'}>
@@ -28,6 +28,15 @@ const UserProfileCard2 = ()=>{
             <Heading size={'3xl'} color={colorMode=== 'dark' ? 'black' : 'white'}>Mukoro Oghenetega</Heading>
             <Text fontSize={'sm'} color={colorMode=== 'dark' ? 'black' : 'white'}>@te_ga_mm</Text>
             <Text fontSize={'md'} pt={2} color={colorMode=== 'dark' ? 'black' : 'white'}>Aspiring Front-End Developer with hands-on experience in HTML, CSS, and JavaScript. Currently expanding skills in React and React Native.</Text>
+        </Box>
+
+        <Box h={{base: 'auto', md: '40px'}} w={{base: '90%', sm: '90%'}}  ml={6}>
+            <Flex gap={8} align={'center'}>
+            <Text fontSize={'sm'} color={colorMode=== 'dark' ? 'black' : 'white'}><b>10 </b>Points</Text>
+            <Text fontSize={'sm'} color={colorMode=== 'dark' ? 'black' : 'white'}><b>10 </b>Friends</Text>
+            <Text fontSize={'sm'} color={colorMode=== 'dark' ? 'gray' : 'white'}>Joined Apr 2025</Text>
+            </Flex>
+
         </Box>
 
         <Box h={{base: 'auto', md: '100px'}} ml={3}>
